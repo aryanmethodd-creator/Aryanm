@@ -1,37 +1,36 @@
-function start() {
+function openEnvelope(){
 
-  // MUSIC
-  const music = document.getElementById("bgMusic");
-  if (music) music.play();
+  document.getElementById("music").play();
 
-  // SHOW SCENE
-  document.getElementById("scene").style.display = "block";
-  document.getElementById("startText").style.display = "none";
+  document.getElementById("step1").style.display="none";
+  document.getElementById("step2").style.display="block";
 
-  // PHOTO
-  setTimeout(() => {
-    document.querySelector(".photo").style.opacity = "1";
-  }, 500);
+  setTimeout(()=>{
+    document.getElementById("step2").style.display="none";
+    showLetter();
+  },2000);
+}
 
-  // CANDLE
-  setTimeout(() => {
-    document.querySelector(".candle").innerText = "🕯️✨";
-  }, 1500);
+function showLetter(){
 
-  // CAKE
-  setTimeout(() => {
-    document.querySelector(".cake").style.display = "block";
-  }, 2500);
+  document.getElementById("step3").style.display="block";
 
-  // CAKE CUT
-  setTimeout(() => {
-    document.querySelector(".cake").innerText = "🍰";
-  }, 4000);
+  let text = "Happy Birthday 💖\nYou are very special 😊\nStay happy always 💕";
+  let i=0;
 
-  // LETTER
-  setTimeout(() => {
-    document.getElementById("letter").innerText =
-      "🎂 Happy Birthday 💖\n\nYou are very special 😊\nStay happy always 💕";
-    document.getElementById("letter").style.opacity = "1";
-  }, 5500);
+  let typing = setInterval(()=>{
+    document.getElementById("letter").innerText += text[i];
+    i++;
+    if(i>=text.length){
+      clearInterval(typing);
+      showFinal();
+    }
+  },50);
+}
+
+function showFinal(){
+  setTimeout(()=>{
+    document.getElementById("step3").style.display="none";
+    document.getElementById("step4").style.display="block";
+  },2000);
 }
