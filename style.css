@@ -1,45 +1,35 @@
 body {
-    margin: 0;
-    padding: 20px;
-    text-align: center;
-    font-family: Arial;
-    background: linear-gradient(to right, #ff9a9e, #fecfef);
-    color: white;
-}
-
-.btn {
-    margin-top: 30px;
-    padding: 12px 25px;
-    background: white;
-    color: #ff4d6d;
-    border: none;
-    border-radius: 25px;
-    font-size: 16px;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial;
+  background: linear-gradient(to right, #ff9a9e, #fecfef);
+  color: white;
 }
 
 .photo {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    margin-top: 20px;
-    opacity: 0;
-    transition: 1s;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin-top: 20px;
+  opacity: 0;
+  transition: 1s;
 }
 
 .candle {
-    font-size: 40px;
-    margin-top: 15px;
+  font-size: 40px;
+  margin-top: 15px;
 }
 
 .cake {
-    font-size: 60px;
-    margin-top: 15px;
+  font-size: 60px;
+  margin-top: 15px;
 }
 
 #letter {
-    margin-top: 20px;
-    font-size: 18px;
-    opacity: 0;
-    transition: 1s;
-    white-space: pre-line;
+  margin-top: 20px;
+  font-size: 18px;
+  opacity: 0;
+  transition: 1s;
+  white-space: pre-line;
 }
