@@ -1,35 +1,30 @@
-body {
-  margin: 0;
-  padding: 20px;
-  text-align: center;
-  font-family: Arial;
-  background: linear-gradient(to right, #ff9a9e, #fecfef);
-  color: white;
+body{
+  margin:0;
+  text-align:center;
+  font-family:Arial;
+  background:linear-gradient(to right,#ff9a9e,#fecfef);
+  color:white;
 }
 
-.photo {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  margin-top: 20px;
-  opacity: 0;
-  transition: 1s;
+button{
+  padding:12px 25px;
+  border:none;
+  border-radius:20px;
+  background:white;
+  color:#ff4d6d;
 }
 
-.candle {
-  font-size: 40px;
-  margin-top: 15px;
+.photo{
+  width:150px;
+  border-radius:50%;
+  margin-top:20px;
 }
 
-.cake {
-  font-size: 60px;
-  margin-top: 15px;
+.envelope{
+  font-size:80px;
+  margin-top:50px;
 }
 
-#letter {
-  margin-top: 20px;
-  font-size: 18px;
-  opacity: 0;
-  transition: 1s;
-  white-space: pre-line;
+.cake{
+  font-size:70px;
 }
