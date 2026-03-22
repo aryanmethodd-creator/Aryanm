@@ -7,10 +7,6 @@ body {
     color: white;
 }
 
-h1 {
-    font-size: 22px;
-}
-
 .btn {
     margin-top: 30px;
     padding: 12px 25px;
@@ -21,7 +17,6 @@ h1 {
     font-size: 16px;
 }
 
-/* PHOTO */
 .photo {
     width: 140px;
     height: 140px;
@@ -29,23 +24,18 @@ h1 {
     margin-top: 20px;
     opacity: 0;
     transition: 1s;
-    border: 3px solid white;
 }
 
-/* CANDLE */
 .candle {
     font-size: 40px;
     margin-top: 15px;
 }
 
-/* CAKE */
 .cake {
     font-size: 60px;
     margin-top: 15px;
-    display: none;
 }
 
-/* LETTER */
 #letter {
     margin-top: 20px;
     font-size: 18px;
