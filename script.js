@@ -2,39 +2,53 @@ const params = new URLSearchParams(window.location.search);
 const name = params.get("name") || "";
 
 function start() {
-    document.getElementById("bgMusic").play();
-    document.getElementById("startText").style.display = "none";
-    document.getElementById("scene").style.display = "block";
+    // Music play
+    const music = document.getElementById("bgMusic");
+    if (music) music.play();
 
-    // Photo show
+    // Hide start text
+    const startText = document.getElementById("startText");
+    if (startText) startText.style.display = "none";
+
+    // Show main scene
+    const scene = document.getElementById("scene");
+    if (scene) scene.style.display = "block";
+
+    // PHOTO SHOW
     setTimeout(() => {
-        document.querySelector(".photo").style.opacity = "1";
+        const photo = document.querySelector(".photo");
+        if (photo) photo.style.opacity = "1";
     }, 500);
 
-    // Candle glow
+    // CANDLE GLOW
     setTimeout(() => {
-        document.querySelector(".candle").innerText = "🕯️✨";
+        const candle = document.querySelector(".candle");
+        if (candle) candle.innerText = "🕯️✨";
     }, 1500);
 
-    // Cake appear
+    // CAKE SHOW
     setTimeout(() => {
-        document.querySelector(".cake").style.display = "block";
+        const cake = document.querySelector(".cake");
+        if (cake) cake.style.display = "block";
     }, 2500);
 
-    // Cake cut
+    // CAKE CUT
     setTimeout(() => {
-        document.querySelector(".cake").innerText = "🍰";
+        const cake = document.querySelector(".cake");
+        if (cake) cake.innerText = "🍰";
     }, 4000);
 
-    // Letter show
+    // LETTER SHOW
     setTimeout(() => {
-        let message = "🎂 Happy Birthday " + Diya + " 💖\n\n"
-        + "You are very special to me 😊\n"
-        + "May your day be full of happiness 💕\n"
-        + "Keep smiling always ❤️";
+        const letter = document.getElementById("letter");
+        if (letter) {
+            let message = "🎂 Happy Birthday " + Diya + " 💖\n\n"
+                + "You are very special to me 😊\n"
+                + "May your day be full of happiness 💕\n"
+                + "Keep smiling always ❤️";
 
-        let letter = document.getElementById("letter");
-        letter.innerText = message;
-        letter.style.opacity = "1";
+            letter.innerText = message;
+            letter.style.opacity = "1";
+        }
     }, 5500);
 }
