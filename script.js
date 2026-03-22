@@ -28,7 +28,7 @@ function start() {
 
     // LETTER SHOW
     setTimeout(() => {
-        let msg = "🎂 Happy Birthday " + Diya + " 💖\n\n"
+        let msg = "🎂 Happy Birthday " + name + " 💖\n\n"
         + "You are very special to me 😊\n"
         + "Stay happy always 💕\n"
         + "Keep smiling ❤️";
