@@ -6,26 +6,31 @@ function start() {
     document.getElementById("startText").style.display = "none";
     document.getElementById("scene").style.display = "block";
 
-    // Step 1: Candle
+    // Step 1: Photo show
+    setTimeout(() => {
+        document.querySelector(".photo").style.opacity = "1";
+    }, 500);
+
+    // Step 2: Candle glow
     setTimeout(() => {
         document.querySelector(".candle").innerText = "🕯️✨";
-    }, 1000);
+    }, 1500);
 
-    // Step 2: Cake appear
+    // Step 3: Cake appear
     setTimeout(() => {
         document.querySelector(".cake").style.display = "block";
-    }, 2000);
+    }, 2500);
 
-    // Step 3: Cake cut effect
+    // Step 4: Cake cut
     setTimeout(() => {
         document.querySelector(".cake").innerText = "🍰";
-    }, 3500);
+    }, 4000);
 
-    // Step 4: Final message
+    // Step 5: Final message
     setTimeout(() => {
-        let text = "🎂 Happy Birthday " + name + " 💖🎉";
+        let text = "🎂 Happy Birthday " + Diya + " 💖\nYou are my favorite person 😊";
         let final = document.getElementById("finalText");
         final.innerText = text;
         final.style.opacity = "1";
-    }, 5000);
+    }, 5500);
 }
