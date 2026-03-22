@@ -2,6 +2,10 @@
 <html>
 <head>
     <Diya>For You 💖</Diya>
+
+    <!-- MOBILE FIX -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -10,25 +14,18 @@
     <source src="music.mp3" type="audio/mp3">
 </audio>
 
-<div class="container">
+<h1 id="startText">💖 Tap Start 💖</h1>
 
-    <h1 id="startText">💖 Tap to Start 💖</h1>
-
-    <div id="scene" style="display:none;">
-        
-        <img src="photo.jpg" class="photo">
-
-        <div class="candle">🕯️</div>
-        <div class="cake">🎂</div>
-
-        <div id="letter" class="letter"></div>
-
-    </div>
-
+<div id="scene">
+    <img src="photo.jpg" class="photo">
+    <div class="candle">🕯️</div>
+    <div class="cake">🎂</div>
+    <div id="letter"></div>
 </div>
 
-<button onclick="start()" class="playBtn">Start 💖</button>
+<button onclick="start()" class="btn">Start 💖</button>
 
 <script src="script.js"></script>
+
 </body>
 </html>
