@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Test</title>
+    <Diya>For You 💖</Diya>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body style="background:pink; text-align:center;">
+<body>
 
-<h1>Hello Birthday 💖</Diya>
+<audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mp3">
+</audio>
 
+<div class="container">
+
+    <h1 id="startText">💖 Tap to Start 💖</h1>
+
+    <div id="scene" style="display:none;">
+        
+        <img src="photo.jpg" class="photo">
+
+        <div class="candle">🕯️</div>
+        <div class="cake">🎂</div>
+
+        <div id="letter" class="letter"></div>
+
+    </div>
+
+</div>
+
+<button onclick="start()" class="playBtn">Start 💖</button>
+
+<script src="script.js"></script>
 </body>
 </html>
