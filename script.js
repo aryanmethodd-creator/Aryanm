@@ -6,31 +6,35 @@ function start() {
     document.getElementById("startText").style.display = "none";
     document.getElementById("scene").style.display = "block";
 
-    // Step 1: Photo show
+    // Photo show
     setTimeout(() => {
         document.querySelector(".photo").style.opacity = "1";
     }, 500);
 
-    // Step 2: Candle glow
+    // Candle glow
     setTimeout(() => {
         document.querySelector(".candle").innerText = "🕯️✨";
     }, 1500);
 
-    // Step 3: Cake appear
+    // Cake appear
     setTimeout(() => {
         document.querySelector(".cake").style.display = "block";
     }, 2500);
 
-    // Step 4: Cake cut
+    // Cake cut
     setTimeout(() => {
         document.querySelector(".cake").innerText = "🍰";
     }, 4000);
 
-    // Step 5: Final message
+    // Letter show
     setTimeout(() => {
-        let text = "🎂 Happy Birthday " + Diya + " 💖\nYou are my favorite person 😊";
-        let final = document.getElementById("finalText");
-        final.innerText = text;
-        final.style.opacity = "1";
+        let message = "🎂 Happy Birthday " + Diya + " 💖\n\n"
+        + "You are very special to me 😊\n"
+        + "May your day be full of happiness 💕\n"
+        + "Keep smiling always ❤️";
+
+        let letter = document.getElementById("letter");
+        letter.innerText = message;
+        letter.style.opacity = "1";
     }, 5500);
 }
