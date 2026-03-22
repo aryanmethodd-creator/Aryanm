@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>For You 💖</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You 💖</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<audio id="bgMusic" loop>
+<audio id="music" loop>
   <source src="music.mp3" type="audio/mp3">
 </audio>
 
-<h2>For You 💖</h2>
-<h1 id="startText">💖 Tap Start 💖</h1>
-
-<div id="scene" style="display:none;">
-  <img src="photo.jpg" class="photo">
-  <div class="candle">🕯️</div>
-  <div class="cake" style="display:none;">🎂</div>
-  <div id="letter"></div>
+<div id="step1">
+  <h2>For You 💖</h2>
+  <button onclick="openEnvelope()">Open 💌</button>
 </div>
 
-<button onclick="start()">Start 💖</button>
+<div id="step2" style="display:none;">
+  <div class="envelope">💌</div>
+  <p>Tap to open</p>
+</div>
+
+<div id="step3" style="display:none;">
+  <p id="letter"></p>
+</div>
+
+<div id="step4" style="display:none;">
+  <img src="photo.jpg" class="photo">
+  <div class="cake">🎂</div>
+  <h2>🎉 Happy Birthday 💖</h2>
+</div>
 
 <script src="main.js"></script>
 
